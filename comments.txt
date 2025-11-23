@@ -1,0 +1,18 @@
+1. This is a review of the manuscript "Verification of Galileo's free fall hypothesis through a set of 1D vertical drops" by Ahmadzad, Pawelek, Butch, and Chung. The MS tests "Galileo's theory fo free fall" by investigating whether or not an object's accelration downward is dependent on its mass. While the method of dropping and obtaining motion kinematics to fit to a quadratic is relatively straightforward, the authors appear to set themselves up for confirmation bias by explicitly seeking to prove a given final result. The MS needs major revision before it is acceptable for publication.
+
+2. Introduction: No source is given for "commonly accepted Galileo's theory of free fall" when it is certain they did not talk to Galilieo and probably are not super conversant in Italian or Latin. The equation given is given without explanation of where it is valid, how it was obtained, etc and no source is given, nor is a source given for the expected g=9.8 m/s^2 (at earth surface). Moreover no explanation is given of where their entire model of gravity might be wrong. The introduction hedges, appearing to look at "whether these deviations [from air resistance] are significant" which makes it even more weak. The authors "hypothesis that there will be no statistically significant differences in the time it takes each object to hit the ground" but do not explain alternative hypotheses; they also claim the acceleration will be 9.8 m/s^2.
+
+3. Methods: Weights are cited in grams not kg. Sources for major equipment are not given nor are any details about the camera, frame rate, filming setup, etc; nor are any details about the instructions given to the one (many?) stopwatch timers. Extraneous details like walkie talkies are mentioned instead and a wholly inappropriate stick figure drawing is given to explain.
+
+Source for the Tracker software is not given. Rationale for using 0.1s intervals is note given. Software used to do 1 way ANOVA not given (how is it one way with 3 balls?)
+
+4. Results: Averages (mean?) are given but no indication of standard deviation or experimental error is given. It's not clear how the drops were aligned so that averaging all data at t=0, t=0.1, t=0.2s makes sense at all. The MS refers to "velocity versus time graph" but has no such graph! In addition, the MS mixes results ("the average slope was -9.5m/s^2") with interpretation/discussion - this is unacceptable. Discussion should be in the discussion section. Data tables should be made more compact. 
+
+5. Discussion: Under interpretation, the authors state they found acceleration close to -9.8 m/s^2 and found differences between time to drop are not significantly different. They need to refer specifically to the graphs or tables that are relevant here. The interpretation is that this is support of a hypothesis that these objects undergo uniform acceleration with the same acceleration -g; and also that alternatives such as heavier objects fall faster are REJECTED. To not present it this way risks confirmation bias.
+
+UNder potential sources of error - is there no published work that gives an understanding of how off we expect manual timing with stopwatches to be! Seems like the authors are lazy about doing necessary background research.
+
+Acknowledgements go before refences. It is improper to cite reviewers by name as you don't know who they are - they're anonymous!
+
+The references are incomplete. Barth 2020 is never cited nor is the publisher given. What is "Analysis ToolPak".
+
