@@ -1,0 +1,155 @@
+\documentclass[reprint,amsmath,amssymb,aps,twoside]{revtex4-2}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{siunitx}
+%\usepackage{tikz,pgfplots}
+\sisetup{separate-uncertainty=true}
+\usepackage[colorlinks,allcolors=blue]{hyperref}
+\usepackage{cleveref}
+\crefname{equation}{}{}
+\crefname{figure}{Fig.}{Figs.}
+\crefname{table}{Table}{Tables}
+\usepackage{svg}
+
+% set PDF metadata
+\hypersetup{%
+pdftitle={Downward acceleration is independent of mass during free fall},
+pdfauthor={Omar Ahmadzada, Jacob Pawelek, Matthew Butch, and Timothy Chung},
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,RO]{J S\&E \textbf{2}, 43--48 (2026)}
+\fancyhead[LO]{Chung \emph{et al}}
+\fancyhead[LE]{Downward acceleration is independent of mass during free fall}
+\fancyfoot[C]{\thepage}
+\fancypagestyle{mytitlepage}{
+\fancyhf{}
+\fancyhead[C]{Journal of Science \& Engineering \textbf{2}, 43--48 (2026)}
+\fancyfoot[C]{\thepage}
+}
+
+
+\begin{document}
+\setcounter{page}{43}
+
+\title{Downward acceleration is independent of mass during free fall}
+\author{Omar Ahmadzada}
+\author{Jacob Pawelek}
+\author{Matthew Butch}
+\author{Timothy Chung}
+\email{Contact author: 427tchung@frhsd.com}
+\affiliation{Science \& Engineering Magnet Program, \href{https://manalapan.frhsd.com/}{Manalapan High School}, Englishtown, NJ 07726 USA}
+\date{\today}
+
+\begin{abstract}
+This experiment tests Galileo’s theory of free fall by investigating whether or not an object's acceleration downward is dependent on its mass. Three objects of differing masses were released at rest from a height of about \qty{5}{\meter}: a ping pong ball, a tennis ball, and a cricket ball (GIVE MASS RANGE). This model assumes negligible air resistance, however, deviation can occur for objects with low mass and high surface area. Tracking software was used to record the motion of each object and output the position-time data, which was used to create the graphs for velocity-time. The velocity-time graphs displayed a mostly-linear structure, with all of them having a slope (average acceleration) of around \qty{-9.8}{\meter\per\second\squared}, close to the accepted gravitational acceleration near Earth’s surface. Since the accelerations of each object are consistent with each other to some degree of uncertainty, it can be concluded that downward acceleration is independent of mass. You have a lot of extra words and need to trim this down. 
+\end{abstract}
+
+\keywords{keywords here}
+
+\maketitle\thispagestyle{mytitlepage}
+
+
+
+\section{Introduction}
+Seeking to disprove Aristotle’s idea that an object’s speed in free fall is proportional to its weight, Galileo experimented with dropping objects from inclined planes \cite{galilei:1638:discorsi} [5][6]. Through these experiments, he showed that in the absence of air resistance, all objects released from rest will fall at the same downward acceleration of $g=\qty{9.8}{\meter\per\second\squared}$, independent of mass \cite{barth:2020:galileo}. \textbf{Did Galileo really measure 9.8?! Really?!}
+
+We use the below equations when the object is in free fall, under the assumption that air resistance is negligible, acceleration is constant, and there is no initial velocity \cite{tipler, openstax}. If an object is released from rest and travels vertically under constant acceleration, its displacement is given by
+\begin{equation}
+%d=1/2gt^2 (Eq. 1)
+(x-x_0) = \frac{1}{2} g t^2. 
+\end{equation}
+When the initial height an object is released from is not equal to 0, the equation for position is
+\begin{equation}
+%y=y0+1/2gt^2 (Eq. 2)
+y = -\frac{1}{2} g t^2 + y_0,
+\end{equation}
+where $y_0$ is the initial height of the object in meters and $g=\qty{9.8}{\meter\per\second\squared}$, and $y$ is the vertical position of the object after time $t$, in seconds. Under the aforementioned conditions, motion is vertical, so we use the relevant kinematics equations to model our situation.
+
+Under realistic conditions, however, air resistance may cause objects to accelerate at a rate slightly different from g, mainly for objects with a low mass and large surface area. We seek to
+examine whether these deviations in acceleration are within uncertainty of $g=\qty{9.8}{\meter\per\second\squared}$ by comparing the motion of three balls of different masses.
+
+The null hypothesis for this experiment is that all objects will experience the same downward acceleration regardless of mass, while the alternative hypothesis is that one or more objects will experience a measurably different downward acceleration.
+
+
+
+
+
+
+
+\section{Methods and materials}
+\subsection{Drop tests}
+\begin{figure}
+\caption{Diagram of experiment setup}
+\end{figure}
+
+To investigate the validity of Galileo’s free fall theory, we used a balance scale to measure the weight of three different balls: a \qty{0.00255}{\kilo\gram} ping pong ball, a \qty{0.0570}{\kilo\gram} tennis ball, and a \qty{0.159}{\kilo\gram} cricket ball. After, we set out a measuring tape from the second story window of Manalapan High School to the ground, which stretched \qty{5}{\meter}. Away from the window, on the ground, an iPhone 13 (Apple Inc; Cupertino, CA) is mounted onto a stationery tripod so that it is parallel to the wall of the building. This minimizes error that may arise from parallax. Our chosen camera recorded footage at \qty{60}{frame\per\second}. This allows us to measure the position of the objects more frequently. As the camera captured the fall of each ball, two students were instructed to begin timing with a stopwatch as soon as the object entered free fall, and stop when it hit the ground.
+
+\subsection{Analysis}
+To improve reliability of results and account for variability in trials, we dropped three distinct balls of each type ($n=3$) to ensure independence across each one. We used Tracker (Open Source Physics; OSP Project) \cite{tracker} to analyze the recordings and find the position of the object versus time for each trial of each object. Despite using a \qty{60}{frame\per\second} recording, we chose to use \qty{0.20}{\second} intervals during analysis since this interval was small enough for us to see the motion of the ball, and large enough to reduce minor tracking errors between frames. For each object, we had to align each of the three trials by defining the start of the object’s free fall as time $t=0$. Due to differing release times between trials, the averaged position values represent an approximate alignment rather than exact synchronization at each time point. We will then use the central finite difference method to calculate the velocity-time data we need to create graphs of motion for each object.
+
+
+
+
+
+
+
+
+
+\section{Results}
+\textbf{You need to actually refer to the figures in your text.}
+
+\begin{table}
+\caption{Three-trial mean position-time relationship of each object ($n=3$)}
+\label{tab:trackery}
+\end{table}
+
+\begin{table}
+\caption{Three-trial mean velocity-time relationship of each object ($n=3$)}
+\label{tab:trackerv}
+\end{table}
+
+\begin{figure}
+\caption{Three-trial mean velocity-time relationship of each object ($n=3$)}
+\label{fig:trackerv}
+\end{figure}
+
+
+
+
+\section{Discussion}
+\subsection{Acceleration is independent of mass}
+Our collected data from the three balls support Galileo's free fall theory.  Each object, regardless of mass, had an approximately linear velocity-time graph, meaning that the accelerations of each were near-constant. The equations that fit each line (ping pong, tennis, cricket ball) each had a slope within \qty{0.5}{\meter\per\second\squared} of $g$, consistent with Galileo's theory that all objects will accelerate downward at $g$ regardless of mass. Therefore, our findings are consistent with our null hypothesis. \textbf{Did you not do a statistical test to see if these are different?}
+
+\subsection{Sources of experimental error}
+Due to humans not having instant reaction speeds, the stopwatch is guaranteed to cause delays in the recording of time elapsed. In fact, manual stopwatch timing is known to introduce reaction time uncertainty of about \qty{0.10}{\second} \cite{faux:2019:manual}. Additionally, it was difficult to ensure that the balls being dropped could be dropped at a constant \qty{5}{\meter} each time. We also cannot ignore the fact that there was a fairly consistent breeze on the day in which we did our experiments, which could have influenced the motion of lighter balls like the ping pong.
+
+
+
+
+
+\section{Acknowledgements} 
+We thank several anonymous reviewers for providing helpful comments. OA, MB, JP, and TC were responsible for data collection and setting up the experiments. OA was responsible for processing data into a readable format, TC was responsible for the initial lab write-up, JP and MB were responsible for lab revisions.
+
+
+
+
+
+\bibliography{lab.bib}
+%References 
+
+%Galilei, Galileo. Two New Sciences. Translated by Stillman Drake, University of Wisconsin Press, 1974.
+%Tipler, Paul A., and Gene Mosca. Physics for Scientists and Engineers. 5th ed., W. H. Freeman, 2003.
+%Brown, Douglas, Robert M. Hanson, and Wolfgang Christian. "Tracker Online." Open Source Physics, AAPT, https://opensourcephysics.github.io/tracker-online/
+%[1] “Tracker,” Open Source Physics, https://physlets.org/tracker/ (accessed Oct. 27, 2025).
+%[2]D. Barth, “6.3: Galileo’s Falling Bodies,” Physics LibreTexts, Dec. 24, 2020. https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Astronomy_for_Educators_(Barth)/06%3A_Exploring_Gravity/6.03%3A_Galileos_Falling_Bodies
+%[3] OpenStax, “Free Fall,” University Physics Volume 1, 2025. https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall (Accessed Dec. 21, 2025)
+%[4]D. A. Faux and J. Godolphin, “Manual timing in physics experiments: Error and uncertainty,” American Journal of Physics, vol. 87, no. 2, pp. 110–115, Feb. 2019, doi: https://doi.org/10.1119/1.5085437.
+%[5]“GALILEO VS. ARISTOTLE ON FREE FALLING BODIES,” Pitt.edu, 2025. https://philsci-archive.pitt.edu/2524/1/Galileo_vs_Aristotle_on_Free_Falling_Bodies.pdf
+%[6]“Dialogues Concerning Two New Sciences - Online Library of Liberty,” Libertyfund.org, 2019. https://oll.libertyfund.org/titles/galilei-dialogues-concerning-two-new-sciences
+
+\end{document}
