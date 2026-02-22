@@ -10,6 +10,7 @@ ypred <- function(t_s){
 
 # make figure 2 a plot of position vs time
 fig <- ggplot(data) +
+    geom_hline(yintercept=0,color="gray50") +
     geom_point(aes(x=t_s,y=y_m,shape=type)) +
     geom_function(fun=ypred,color='blue') + 
     ylab('$y$, \\unit{\\meter}') +

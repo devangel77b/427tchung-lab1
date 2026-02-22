@@ -13,6 +13,7 @@
 \crefname{figure}{Fig.}{Figs.}
 \crefname{table}{Table}{Tables}
 \usepackage{svg}
+\svgpath{{./figures}}
 
 % set PDF metadata
 \hypersetup{%
@@ -108,19 +109,22 @@ To improve reliability of results and account for variability in trials, we drop
 \textbf{You need to actually refer to the figures in your text.}
 
 \begin{table}
-\caption{Three-trial mean position-time relationship of each object ($n=3$)}
+\caption{Data for position-time relationship for three trials of each object ($n=3$)}
 \label{tab:trackery}
 \end{table}
 
-\begin{table}
-\caption{Three-trial mean velocity-time relationship of each object ($n=3$)}
-\label{tab:trackerv}
-\end{table}
-
 \begin{figure}
-\caption{Three-trial mean velocity-time relationship of each object ($n=3$)}
-\label{fig:trackerv}
+\begin{center}
+\includesvg{fig2.svg}
+\end{center}
+\caption{Position-time data for three trials of each object ($n=3$)}
+\label{fig:trackery}
 \end{figure}
+
+\begin{table}
+\caption{Acceleration data for each object}
+\label{tab:trackera}
+\end{table}
 
 
 
