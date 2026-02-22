@@ -137,16 +137,16 @@
 <text x='231.95' y='129.27' text-anchor='middle' style='font-size: 6.40px;fill: #4D4D4D; font-family: "Arial";' textLength='12.42px' lengthAdjust='spacingAndGlyphs'>1.00</text>
 <text x='131.27' y='138.33' text-anchor='middle' style='font-size: 8.00px; font-family: "Arial";' textLength='64.06px' lengthAdjust='spacingAndGlyphs'>$t$, \unit{\second}</text>
 <text transform='translate(9.72,62.54) rotate(-90)' text-anchor='middle' style='font-size: 8.00px; font-family: "Arial";' textLength='60.50px' lengthAdjust='spacingAndGlyphs'>$y$, \unit{\meter}</text>
-<rect x='183.22' y='9.84' width='47.72' height='59.81' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
-<rect x='187.21' y='13.83' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
-<circle cx='195.85' cy='22.47' r='1.42' style='stroke-width: 0.52; stroke: none; fill: #000000;' />
-<rect x='187.21' y='31.11' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
-<polygon points='195.85,37.54 197.76,40.85 193.93,40.85 ' style='stroke-width: 0.52; stroke: none; fill: #000000;' />
-<rect x='187.21' y='48.39' width='17.28' height='17.28' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
-<polygon points='194.43,58.45 197.27,58.45 197.27,55.60 194.43,55.60 ' style='stroke-width: 0.52; stroke: none; fill: #000000;' />
-<text x='208.47' y='24.76' style='font-size: 6.40px; font-family: "Arial";' textLength='18.48px' lengthAdjust='spacingAndGlyphs'>cricket</text>
-<text x='208.47' y='42.04' style='font-size: 6.40px; font-family: "Arial";' textLength='14.19px' lengthAdjust='spacingAndGlyphs'>pong</text>
-<text x='208.47' y='59.32' style='font-size: 6.40px; font-family: "Arial";' textLength='17.05px' lengthAdjust='spacingAndGlyphs'>tennis</text>
+<rect x='196.52' y='9.84' width='34.42' height='25.73' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<rect x='200.50' y='13.83' width='3.99' height='5.92' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<circle cx='202.50' cy='16.79' r='1.42' style='stroke-width: 0.52; stroke: none; fill: #000000;' />
+<rect x='200.50' y='19.74' width='3.99' height='5.92' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<polygon points='202.50,20.49 204.41,23.81 200.58,23.81 ' style='stroke-width: 0.52; stroke: none; fill: #000000;' />
+<rect x='200.50' y='25.66' width='3.99' height='5.92' style='stroke-width: 0.78; stroke: none; fill: #FFFFFF;' />
+<polygon points='201.07,30.04 203.92,30.04 203.92,27.20 201.07,27.20 ' style='stroke-width: 0.52; stroke: none; fill: #000000;' />
+<text x='208.47' y='19.07' style='font-size: 6.40px; font-family: "Arial";' textLength='18.48px' lengthAdjust='spacingAndGlyphs'>cricket</text>
+<text x='208.47' y='24.99' style='font-size: 6.40px; font-family: "Arial";' textLength='14.19px' lengthAdjust='spacingAndGlyphs'>pong</text>
+<text x='208.47' y='30.91' style='font-size: 6.40px; font-family: "Arial";' textLength='17.05px' lengthAdjust='spacingAndGlyphs'>tennis</text>
 </g>
 </g>
 </svg>

@@ -18,6 +18,7 @@ fig <- ggplot(data) +
     theme(legend.position="inside",
 	legend.position.inside=c(0.95,0.95),
 	legend.justification.inside=c("right","top"),
+	legend.key.size=unit(4,"pt"),
 	legend.title=element_blank())
 ggsave('fig2.svg',plot=fig,width=3.4167,height=2,units="in")
     
