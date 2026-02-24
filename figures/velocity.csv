@@ -1,0 +1,13 @@
+type,t_s,v_ms
+cricket,0.2,-2.18
+cricket,0.4,-4.13
+cricket,0.6,-6
+cricket,0.8,-7.73
+pong,0.2,-2.08
+pong,0.4,-3.98
+pong,0.6,-5.93
+pong,0.8,-7.8
+tennis,0.2,-1.95
+tennis,0.4,-3.93
+tennis,0.6,-5.9
+tennis,0.8,-7.83

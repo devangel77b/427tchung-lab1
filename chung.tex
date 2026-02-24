@@ -23,19 +23,19 @@ pdfauthor={Omar Ahmadzada, Jacob Pawelek, Matthew Butch, and Timothy Chung},
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[RE,RO]{J S\&E \textbf{2}, 41--42 (2026)}
+\fancyhead[RE,RO]{J S\&E \textbf{2}, 44--46 (2026)}
 \fancyhead[LO]{Chung \emph{et al}}
 \fancyhead[LE]{Downward acceleration is independent of mass during free fall}
 \fancyfoot[C]{\thepage}
 \fancypagestyle{mytitlepage}{
 \fancyhf{}
-\fancyhead[C]{Journal of Science \& Engineering \textbf{2}, 41--42 (2026)}
+\fancyhead[C]{Journal of Science \& Engineering \textbf{2}, 44--46 (2026)}
 \fancyfoot[C]{\thepage}
 }
 
 
 \begin{document}
-\setcounter{page}{41}
+\setcounter{page}{44}
 
 \title{Downward acceleration is independent of mass during free fall}
 \author{Omar Ahmadzada}
@@ -47,7 +47,7 @@ pdfauthor={Omar Ahmadzada, Jacob Pawelek, Matthew Butch, and Timothy Chung},
 \date{\today}
 
 \begin{abstract}
-This experiment tests Galileo’s theory of free fall by investigating whether or not an object's acceleration downward is dependent on its mass. Three objects of differing masses were released at rest from a height of about \qty{5}{\meter}: a ping pong ball, a tennis ball, and a cricket ball (GIVE MASS RANGE). This model assumes negligible air resistance, however, deviation can occur for objects with low mass and high surface area. Tracking software was used to record the motion of each object and output the position-time data, which was used to create the graphs for velocity-time. The velocity-time graphs displayed a mostly-linear structure, with all of them having a slope (average acceleration) of around \qty{-9.8}{\meter\per\second\squared}, close to the accepted gravitational acceleration near Earth’s surface. Since the accelerations of each object are consistent with each other to some degree of uncertainty, it can be concluded that downward acceleration is independent of mass. You have a lot of extra words and need to trim this down. 
+This experiment tests Galileo’s theory of free fall by investigating whether or not an object's acceleration downward is dependent on its mass. Three objects of differing masses were released at rest from a height of about \qty{5}{\meter}: a ping pong ball, a tennis ball, and a cricket ball, a mass range of three orders of magnitude. Drops were filmed and tracking software was used to record the position of each object. Position data was then used to create the graphs for velocity-time. The velocity-time graphs appeared linear with slope near \qty{-9.8}{\meter\per\second\squared}, close to the accepted gravitational acceleration near Earth’s surface. Since the accelerations of each object are consistent with each other to some degree of uncertainty, we conclude acceleration is independent of mass. 
 \end{abstract}
 
 \keywords{keywords here}
@@ -57,9 +57,9 @@ This experiment tests Galileo’s theory of free fall by investigating whether o
 
 
 \section{Introduction}
-Seeking to disprove Aristotle’s idea that an object’s speed in free fall is proportional to its weight \cite{aristotle:physics}, Galileo experimented with dropping objects from inclined planes \cite{galilei:1638:discorsi, machamer:2021:galileo}. Through these experiments, he showed that in the absence of air resistance, all objects released from rest will fall at the same downward acceleration of $g=\qty{9.8}{\meter\per\second\squared}$, independent of mass \cite{barth:2020:galileo, tipler, openstax, barrons}. \textbf{Did Galileo really measure 9.8?! Really?!}
+Seeking to disprove Aristotle’s idea that an object’s speed in free fall is proportional to its weight \cite{aristotle:physics}, Galileo experimented with dropping objects from inclined planes \cite{galilei:1638:discorsi, machamer:2021:galileo}. Through these experiments, he showed that in the absence of air resistance, all objects released from rest will fall at the same constant acceleration, independent of mass. Later workers showed that near Earth's surface, $g=\qty{9.8}{\meter\per\second\squared}$, independent of mass \cite{barth:2020:galileo, tipler, openstax, barrons}. 
 
-We use the below equations when the object is in free fall, under the assumption that air resistance is negligible, acceleration is constant, and there is no initial velocity \cite{tipler, openstax, barrons}. If an object is released from rest and travels vertically under constant acceleration, its displacement is given by
+We assume the object is in free fall,that air resistance is negligible, acceleration is constant, and there is no initial velocity \cite{tipler, openstax, barrons}. If an object is released from rest and travels vertically under these conditions, its displacement is given by
 \begin{equation}
 %d=1/2gt^2 (Eq. 1)
 (x-x_0) = \frac{1}{2} g t^2. 
@@ -71,7 +71,7 @@ y = -\frac{1}{2} g t^2 + y_0,
 \end{equation}
 where $y_0$ is the initial height of the object in meters and $g=\qty{9.8}{\meter\per\second\squared}$, and $y$ is the vertical position of the object after time $t$, in seconds. Under the aforementioned conditions, motion is vertical, so we use the relevant kinematics equations to model our situation.
 
-Under realistic conditions, however, air resistance may cause objects to accelerate at a rate slightly different from g, mainly for objects with a low mass and large surface area. We seek to
+Under realistic conditions, however, air resistance may cause objects to accelerate at a rate slightly different from $g$, mainly for objects with a low mass and large surface area. We seek to
 examine whether these deviations in acceleration are within uncertainty of $g=\qty{9.8}{\meter\per\second\squared}$ by comparing the motion of three balls of different masses.
 
 The null hypothesis for this experiment is that all objects will experience the same downward acceleration regardless of mass, while the alternative hypothesis is that one or more objects will experience a measurably different downward acceleration.
@@ -92,12 +92,12 @@ The null hypothesis for this experiment is that all objects will experience the 
 \label{fig:1}
 \end{figure}
 
-To investigate the validity of Galileo’s free fall theory, we used a balance scale to measure the weight of three different balls: a \qty{0.00255}{\kilo\gram} ping pong ball, a \qty{0.0570}{\kilo\gram} tennis ball, and a \qty{0.159}{\kilo\gram} cricket ball. After, we set out a measuring tape from the second story window of Manalapan High School to the ground, which stretched \qty{5}{\meter}. Away from the window, on the ground, an iPhone 13 (Apple Inc; Cupertino, CA) is mounted onto a stationery tripod so that it is parallel to the wall of the building. This minimizes error that may arise from parallax. Our chosen camera recorded footage at \qty{60}{frame\per\second}. This allows us to measure the position of the objects more frequently. As the camera captured the fall of each ball, two students were instructed to begin timing with a stopwatch as soon as the object entered free fall, and stop when it hit the ground.
+Drop tests were conducted using the setup shown schematically in \cref{fig:1}. To investigate the validity of Galileo’s free fall theory, we used a balance to measure the mass of three different balls: a \qty{0.00255}{\kilo\gram} ping pong ball, a \qty{0.0570}{\kilo\gram} tennis ball, and a \qty{0.159}{\kilo\gram} cricket ball. After, we set out a measuring tape from the second story classroom window (\ang{40.2886}N \ang{74.3363}W) to the ground, which stretched \qty{5}{\meter}. Away from the window, on the ground, an iPhone 13 (Apple Inc; Cupertino, CA) was mounted onto a stationary tripod approximately \qty{20}{\meter} away, so that it is parallel to the wall of the building. This minimized error that may arise from parallax. We recorded footage at \qty{60}{frame\per\second}. This allowed us to measure the position of the objects more frequently. As the camera captured the fall of each ball, two students were instructed to begin timing with a stopwatch (Pulivia YS-802; Shenzhen, China) as soon as the object was released, and stop when it hit the ground.
 
 \subsection{Analysis}
 To improve reliability of results and account for variability in trials, we dropped three distinct balls of each type ($n=3$) to ensure independence across each one. We used Tracker \cite{tracker} \cite{tracker, renika:2024:kinematics} to analyze the recordings and find the position of the object versus time for each trial of each object. Despite using a \qty{60}{frame\per\second} recording, we chose to use \qty{0.20}{\second} intervals during analysis since this interval was small enough for us to see the motion of the ball, and large enough to reduce minor tracking errors between frames. For each object, we had to align each of the three trials by defining the start of the object’s free fall as time $t=0$. Due to differing release times between trials, the averaged position values represent an approximate alignment rather than exact synchronization at each time point. We will then use the central finite difference method to calculate the velocity-time data we need to create graphs of motion for each object.
 
-Statistical analysis \cite{starnes:2015:practice} was performed in R \cite{R} using the \texttt{ggplot2} and \texttt{dplyr} libraries \cite{ggplot2, dplyr}. 
+Statistical analysis \cite{starnes:2015:practice} was performed in R \cite{R} using the \texttt{ggplot2} and \texttt{dplyr} libraries \cite{ggplot2, dplyr}. Data and code are available at \url{https://github.com/devangel77b/427tchung-lab1}.
 
 
 
@@ -106,7 +106,7 @@ Statistical analysis \cite{starnes:2015:practice} was performed in R \cite{R} us
 
 
 \section{Results}
-\textbf{You need to actually refer to the figures in your text.}
+Digitized position data are shown in \cref{tab:1} and \cref{fig:trackery}. The resulting acceleration from \cref{fig:trackery} is $a=\qty{9.8\pm0.2}{\meter\per\second\squared}$. Velocity data obtained Tracker are given in \cref{tab:2} and \cref{fig:trackervy}. 
 
 \input{tables/table1.tex}
 %\begin{table}
@@ -118,7 +118,7 @@ Statistical analysis \cite{starnes:2015:practice} was performed in R \cite{R} us
 \begin{center}
 \includesvg{fig2.svg}
 \end{center}
-\caption{Position-time data for three trials of each object ($n=3$)}
+\caption{Position-time data for three trials of each object ($n=3$). There are not significant differences between the three ball types (nested ANOVA, $p=0.06$). For these data, $y=-\num{4.9\pm0.1}t^2$.}
 \label{fig:trackery}
 \end{figure}
 
@@ -128,12 +128,21 @@ Statistical analysis \cite{starnes:2015:practice} was performed in R \cite{R} us
 %\label{tab:trackera}
 %\end{table}
 
+\begin{figure}
+\begin{center}
+\includesvg{fig3.svg}
+\end{center}
+\caption{Velocity-time data for three trials of each object ($n=3$), from \cref{tab:2}.}
+\label{fig:trackervy}
+\end{figure}
+
 
 
 
 \section{Discussion}
 \subsection{Acceleration is independent of mass}
-Our collected data from the three balls support Galileo's free fall theory.  Each object, regardless of mass, had an approximately linear velocity-time graph, meaning that the accelerations of each were near-constant. The equations that fit each line (ping pong, tennis, cricket ball) each had a slope within \qty{0.5}{\meter\per\second\squared} of $g$, consistent with Galileo's theory that all objects will accelerate downward at $g$ regardless of mass. Therefore, our findings are consistent with our null hypothesis. \textbf{Did you not do a statistical test to see if these are different?}
+Our collected data from the three balls support Galileo’s free fall theory that downward
+acceleration is independent of mass. As seen in \cref{fig:trackery}, the position-time graph shows a parabolic curve.  The velocity-time graph is linear (\cref{fig:trackervy}). For all points, the observed acceleration of \qty{-9.8\pm0.2}{\meter\per\second\squared} agrees well with the theoretical value of $g$ \cite{tipler,openstax,barrons}. Differences between balls were not significant (nested ANOVA, $p=0.06$), supporting Galileo's hypothesis and refuting Aristotle's. 
 
 \subsection{Sources of experimental error}
 Due to humans not having instant reaction speeds, the stopwatch is guaranteed to cause delays in the recording of time elapsed. In fact, manual stopwatch timing is known to introduce reaction time uncertainty of about \qty{0.10}{\second} \cite{faux:2019:manual, hetzler:2008:reliability}. Additionally, it was difficult to ensure that the balls being dropped could be dropped at a constant \qty{5}{\meter} each time. We also cannot ignore the fact that there was a fairly consistent breeze on the day in which we did our experiments, which could have influenced the motion of lighter balls like the ping pong.

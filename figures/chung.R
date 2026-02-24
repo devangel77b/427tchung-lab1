@@ -39,3 +39,23 @@ pong <- filter(bloop,type=='pong')
 print(summary(lm(y_m~tsquared,cricket)))
 print(summary(lm(y_m~tsquared,tennis)))
 print(summary(lm(y_m~tsquared,pong)))
+
+
+# also do velocity
+data2 <- tibble(read.csv('velocity.csv',header=TRUE))
+
+# make figure 2 a plot of position vs time
+fig2 <- ggplot(data2,aes(x=t_s,y=v_ms,color=type)) +
+    geom_hline(yintercept=0,color="gray50") +
+    geom_point() +
+    geom_smooth(method="lm",formula=y~x+0,se=FALSE)+
+    ylab('$v_y$, \\unit{\\meter\\per\\second}') +
+    xlab('$t$, \\unit{\\second}') +
+    xlim(0,1)+
+    theme_bw(base_size=8) +
+    theme(legend.position="inside",
+	legend.position.inside=c(0.95,0.95),
+	legend.justification.inside=c("right","top"),
+	legend.key.size=unit(4,"pt"),
+	legend.title=element_blank())
+ggsave('fig3.svg',plot=fig2,width=3.4167,height=2,units="in")
